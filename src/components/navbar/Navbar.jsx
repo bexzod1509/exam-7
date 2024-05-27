@@ -7,7 +7,9 @@ import logo from "../../assets/logo.png";
 import wish from "../../assets/wish.png";
 import search from "../../assets/search.png";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 function Navbar() {
+  let wishlist = useSelector((state) => state.heart.value);
   let token = localStorage.getItem("token");
   return (
     <>
@@ -30,7 +32,7 @@ function Navbar() {
               </NavLink>
               <NavLink to={"/wish"}>
                 <img src={wish} alt="" />
-                <p>0</p>
+                <p>{wishlist.length}</p>
               </NavLink>
               <NavLink to={"/cart"}>
                 <img src={cart} alt="" />

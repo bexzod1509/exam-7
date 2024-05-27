@@ -25,25 +25,27 @@ function Login() {
   let username = useRef("johnd");
   let password = useRef("m38rmF$");
   return (
-    <div className="container">
+    <div>
       <div className="c">
         <p>
           <b>Home</b> / Contact Us
         </p>
-        <form onSubmit={submit} action="">
-          <h4>Username</h4>
-          <input defaultValue={"johnd"} ref={username} required type="text" />
-          <h4>Password</h4>
-          <input
-            defaultValue={"m38rmF$"}
-            ref={password}
-            required
-            type="password"
-            name=""
-            id=""
-          />
-          <button>LOGIN</button>
-        </form>
+        <div className="container">
+          <form onSubmit={submit} action="">
+            <h4>Username</h4>
+            <input defaultValue={"johnd"} ref={username} required type="text" />
+            <h4>Password</h4>
+            <input
+              defaultValue={"m38rmF$"}
+              ref={password}
+              required
+              type="password"
+              name=""
+              id=""
+            />
+            <button>LOGIN</button>
+          </form>
+        </div>
       </div>
     </div>
   );

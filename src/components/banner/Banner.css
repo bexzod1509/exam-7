@@ -1,0 +1,107 @@
+.d {
+  background-image: url(../../assets/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.d h1 {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  text-align: left;
+  max-width: 573px;
+  padding: 255px 0px 166px 0px;
+}
+.d2 img {
+  width: 320px;
+  position: relative;
+}
+.d2 h1 {
+  color: rgb(34, 50, 99);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  text-align: left;
+  position: absolute;
+  z-index: 1;
+  max-width: 181px;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+.d3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  z-index: 1;
+  margin-top: -60px;
+  margin-left: 20px;
+}
+.d3 p {
+  color: rgb(144, 152, 177);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  text-align: left;
+  text-decoration-line: line-through;
+}
+.d3 span {
+  color: rgb(251, 113, 129);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+.d2 h4 {
+  color: rgb(64, 191, 255);
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+.d1 {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -60px;
+}
+.d4 h1 {
+  color: rgb(34, 38, 42);
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 53px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 63px;
+}
+.d5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 26px;
+}
+.d5 p {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
+.d5 p:hover {
+  color: rgb(51, 160, 255);
+  border-bottom: 2px solid rgb(51, 160, 255);
+}

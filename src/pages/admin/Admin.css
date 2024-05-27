@@ -29,6 +29,8 @@
   text-align: left;
   text-align: center;
   margin-top: 20px;
+  background: rgba(246, 247, 248, 0.5);
+  padding: 15px;
 }
 .admin b {
   color: rgb(51, 160, 255);
