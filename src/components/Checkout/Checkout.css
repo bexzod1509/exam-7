@@ -1,0 +1,135 @@
+.j {
+  position: fixed;
+  top: 0;
+  background: #0006;
+  width: 100%;
+  height: 100vh;
+  z-index: 11;
+}
+.j1 {
+  max-width: 1000px;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  animation: edit 0.5s ease 0s forwards;
+  background: #fff;
+  z-index: 12;
+  border-radius: 4px;
+}
+@keyframes edit {
+  to {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+.j3 {
+  display: flex;
+  align-items: start;
+  gap: 74px;
+  margin-top: 110px;
+  justify-content: center;
+}
+.j2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.j2 button {
+  border: none;
+  cursor: pointer;
+}
+.j1 h1 {
+  color: rgb(64, 191, 255);
+  font-family: Raleway;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: -1px;
+  letter-spacing: 0px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+.j7 input {
+  width: 336px;
+  padding: 14px;
+  border-radius: 10px;
+  background: rgba(223, 222, 222, 0.3);
+  margin-bottom: 32px;
+  outline: none;
+  border: none;
+}
+.j7 h2 {
+  color: rgb(64, 191, 255);
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: -1px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-transform: capitalize;
+  margin-bottom: 14px;
+}
+.j4 {
+  max-width: 378px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.j4:hover {
+  background: rgb(235, 240, 255);
+}
+.j5 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.j5 p {
+  color: rgb(34, 50, 99);
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+.j6 {
+  width: 336px;
+  padding: 14px;
+  border-radius: 10px;
+  background: rgba(223, 222, 222, 0.3);
+  margin-bottom: 39px;
+  outline: none;
+  border: none;
+}
+#j6 {
+  width: 336px;
+  padding: 26px 62px 74px 14px;
+  border-radius: 10px;
+  background: rgba(223, 222, 222, 0.3);
+  margin-bottom: 39px;
+  outline: none;
+  border: none;
+}
+.j8 {
+  display: flex;
+  justify-content: center;
+  margin-top: 27px;
+}
+.j8 button {
+  border: none;
+  cursor: pointer;
+  padding: 10px 61px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-family: Nunito;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 33px;
+  letter-spacing: -2%;
+  text-align: center;
+  background: rgb(51, 160, 255);
+}

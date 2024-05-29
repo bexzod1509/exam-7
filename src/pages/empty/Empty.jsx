@@ -3,7 +3,7 @@ import empty from "../../assets/empty.webp";
 function Empty() {
   return (
     <div className="container">
-      <img src={empty} alt="" />
+      <img style={{ width: "100%" }} src={empty} alt="" />
     </div>
   );
 }

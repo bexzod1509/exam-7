@@ -18,6 +18,7 @@ import color1 from "../../assets/color1.png";
 import color2 from "../../assets/color2.png";
 import color3 from "../../assets/color3.png";
 import color4 from "../../assets/color4.png";
+import { addToCart } from "../../context/cartSlice";
 function Single() {
   let { id } = useParams();
   let { data } = useGetProductsQuery();
@@ -33,9 +34,27 @@ function Single() {
       </div>
       <div className="container">
         <div className="g">
+          <div className={isLoading ? "loading" : "hide"}>
+            <div>
+              <div className="load1"></div>
+              <div className="load2">
+                <div className="load3"></div>
+                <div className="load3"></div>
+                <div className="load3"></div>
+                <div className="load3"></div>
+              </div>
+            </div>
+            <div>
+              <div className="load4"></div>
+              <div className="load5"></div>
+              <div className="load6"></div>
+              <div className="load7"></div>
+              <div className="load5"></div>
+            </div>
+          </div>
           <div>
             <img
-              style={{ width: "375px", height: "271px" }}
+              style={{ width: "375px", height: "271px", objectFit: "contain" }}
               src={dataDetail?.image}
               alt=""
             />
@@ -85,11 +104,11 @@ function Single() {
             <div className="g9">
               <div className="g10">
                 <p>-</p>
-                <h4>2</h4>
+                <h4>1</h4>
                 <p>+</p>
               </div>
               <div className="g11">
-                <button>
+                <button onClick={() => dispatch(addToCart(dataDetail))}>
                   <MdOutlineShoppingCart />
                   Add To Cart
                 </button>
@@ -163,7 +182,7 @@ function Single() {
           <h1>RELATED PRODUCTS</h1>
         </div>
       </div>
-      <Product data={data?.slice(0, 4)} title={"none"} />
+      <Product data={data?.slice(0, 4)} title={"none"} loading={isLoading} />
     </>
   );
 }

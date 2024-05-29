@@ -10,6 +10,7 @@ import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 function Navbar() {
   let wishlist = useSelector((state) => state.heart.value);
+  let Cart = useSelector((state) => state.cart.value);
   let token = localStorage.getItem("token");
   return (
     <>
@@ -36,7 +37,7 @@ function Navbar() {
               </NavLink>
               <NavLink to={"/cart"}>
                 <img src={cart} alt="" />
-                <p>0</p>
+                <p>{Cart?.length}</p>
               </NavLink>
               <h3>items</h3>
               <div className="a3">

@@ -1,0 +1,139 @@
+.i {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 46px;
+  padding-bottom: 23px;
+  border-bottom: 2px solid rgb(246, 247, 248);
+}
+.i1 {
+  display: flex;
+  align-items: center;
+  gap: 170px;
+  flex-wrap: wrap;
+}
+.i2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 53px;
+  border-bottom: 2px solid rgb(246, 247, 248);
+  margin-top: 55px;
+}
+.i3 {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+}
+.i2 p {
+  color: rgb(38, 38, 38);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+  max-width: 320px;
+}
+.i4 {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+}
+.i5 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.i5 button {
+  border: none;
+  color: rgb(51, 160, 255);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px;
+}
+.i5 button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.i10 {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 90px;
+  flex-wrap: wrap;
+}
+.i6 {
+  display: flex;
+  align-items: center;
+}
+.i6 input {
+  width: 200px;
+  border: 2px solid rgb(241, 243, 244);
+  padding: 18px;
+  outline: none;
+}
+.i6 button {
+  background: rgb(51, 160, 255);
+  padding: 14px 18px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+  border: none;
+  margin-left: -2px;
+}
+.i7 {
+  width: 330px;
+}
+.i8 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+  justify-content: space-between;
+}
+.i8 p {
+  color: rgb(38, 38, 38);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.i9 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  border-top: 2px solid rgb(246, 247, 248);
+}
+.i9 h1 {
+  color: rgb(34, 38, 42);
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.i11 {
+  width: 100%;
+  padding: 16px 0;
+  margin-top: 24px;
+  border: none;
+  cursor: pointer;
+  background: rgb(51, 160, 255);
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: center;
+}

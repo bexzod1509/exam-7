@@ -7,6 +7,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleHeart } from "../../context/heartSlice";
 import { NavLink } from "react-router-dom";
+import { addToCart } from "../../context/cartSlice";
 function Product({ data, title, loading }) {
   let wishList = useSelector((state) => state.heart.value);
   let dispatch = useDispatch();
@@ -14,7 +15,7 @@ function Product({ data, title, loading }) {
     <div key={el.id} className="e1">
       <NavLink to={`/product/${el.id}`}>
         <img
-          style={{ width: "290px", height: "280px" }}
+          style={{ width: "290px", height: "280px", objectFit: "contain" }}
           src={el.image}
           alt=""
         />
@@ -27,7 +28,7 @@ function Product({ data, title, loading }) {
             <FaRegHeart />
           )}
         </button>
-        <button>
+        <button onClick={() => dispatch(addToCart(el))}>
           <MdOutlineShoppingCart />
         </button>
       </div>
@@ -42,7 +43,81 @@ function Product({ data, title, loading }) {
   ));
   return (
     <div className="container">
-      <div className="e">{products}</div>
+      <div className="e">
+        <div className={loading ? "loading" : "hide"}>
+          <div>
+            <div className="sk1"></div>
+            <div className="sk2"></div>
+            <div className="sk3"></div>
+            <div className="sk3"></div>
+            <div className="sk4"></div>
+          </div>
+          <div>
+            <div className="sk1"></div>
+            <div className="sk2"></div>
+            <div className="sk3"></div>
+            <div className="sk3"></div>
+            <div className="sk4"></div>
+          </div>
+          <div>
+            <div className="sk1"></div>
+            <div className="sk2"></div>
+            <div className="sk3"></div>
+            <div className="sk3"></div>
+            <div className="sk4"></div>
+          </div>
+          <div>
+            <div className="sk1"></div>
+            <div className="sk2"></div>
+            <div className="sk3"></div>
+            <div className="sk3"></div>
+            <div className="sk4"></div>
+          </div>
+          <div>
+            <div className="sk1"></div>
+            <div className="sk2"></div>
+            <div className="sk3"></div>
+            <div className="sk3"></div>
+            <div className="sk4"></div>
+          </div>
+          <div>
+            <div className="sk1"></div>
+            <div className="sk2"></div>
+            <div className="sk3"></div>
+            <div className="sk3"></div>
+            <div className="sk4"></div>
+          </div>
+          <div>
+            <div className="sk1"></div>
+            <div className="sk2"></div>
+            <div className="sk3"></div>
+            <div className="sk3"></div>
+            <div className="sk4"></div>
+          </div>
+          <div>
+            <div className="sk1"></div>
+            <div className="sk2"></div>
+            <div className="sk3"></div>
+            <div className="sk3"></div>
+            <div className="sk4"></div>
+          </div>
+          <div>
+            <div className="sk1"></div>
+            <div className="sk2"></div>
+            <div className="sk3"></div>
+            <div className="sk3"></div>
+            <div className="sk4"></div>
+          </div>
+          <div>
+            <div className="sk1"></div>
+            <div className="sk2"></div>
+            <div className="sk3"></div>
+            <div className="sk3"></div>
+            <div className="sk4"></div>
+          </div>
+        </div>
+        {products}
+      </div>
       <div style={{ display: `${title}` }} className="e4">
         <button>LOAD MORE</button>
       </div>
