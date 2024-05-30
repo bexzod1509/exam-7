@@ -52,6 +52,8 @@
   font-size: 20px;
   cursor: pointer;
   padding: 4px;
+  background: transparent;
+  border-radius: 50%;
 }
 .i5 button:disabled {
   opacity: 0.5;

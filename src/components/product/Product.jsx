@@ -8,7 +8,9 @@ import { useSelector, useDispatch } from "react-redux";
 import { toggleHeart } from "../../context/heartSlice";
 import { NavLink } from "react-router-dom";
 import { addToCart } from "../../context/cartSlice";
-function Product({ data, title, loading }) {
+import { BsCartCheckFill } from "react-icons/bs";
+function Product({ data, title, loading, setCount, count }) {
+  let Cart = useSelector((state) => state.cart.value);
   let wishList = useSelector((state) => state.heart.value);
   let dispatch = useDispatch();
   let products = data?.map((el) => (
@@ -29,7 +31,11 @@ function Product({ data, title, loading }) {
           )}
         </button>
         <button onClick={() => dispatch(addToCart(el))}>
-          <MdOutlineShoppingCart />
+          {Cart?.some((item) => item.id === el.id) ? (
+            <BsCartCheckFill />
+          ) : (
+            <MdOutlineShoppingCart />
+          )}
         </button>
       </div>
       <h1>{el.title}</h1>
@@ -119,7 +125,9 @@ function Product({ data, title, loading }) {
         {products}
       </div>
       <div style={{ display: `${title}` }} className="e4">
-        <button>LOAD MORE</button>
+        <button disabled={count == 20} onClick={() => setCount((p) => p + 4)}>
+          LOAD MORE
+        </button>
       </div>
     </div>
   );

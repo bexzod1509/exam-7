@@ -16,7 +16,7 @@ function Productcart() {
     <div key={item.id} className="i2">
       <div className="i3">
         <button
-          style={{ border: "none" }}
+          style={{ border: "none", background: "transparet" }}
           onClick={() => {
             dispatch(removeFromCart(item));
             toast.success("Deleted");
@@ -74,7 +74,7 @@ function Productcart() {
           <div className="i7">
             <div className="i8">
               <p>Subtotal</p>
-              <p>${total}</p>
+              <p>${Math.round(total)}</p>
             </div>
             <div className="i8">
               <p>Shipping fee</p>

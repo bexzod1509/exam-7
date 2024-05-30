@@ -40,6 +40,7 @@
 .j2 button {
   border: none;
   cursor: pointer;
+  background: transparent;
 }
 .j1 h1 {
   color: rgb(64, 191, 255);

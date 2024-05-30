@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Banner from "../../components/banner/Banner";
 import Product from "../../components/product/Product";
 import { useGetProductsQuery } from "../../context/productApi";
 import Hero from "../../components/hero/Hero";
 function Home() {
-  let { data, isLoading } = useGetProductsQuery();
+  const [count, setCount] = useState(8);
+  let { data, isLoading } = useGetProductsQuery(count);
   return (
     <div>
       <Banner />
-      <Product data={data} loading={isLoading} />
+      <Product
+        data={data}
+        loading={isLoading}
+        count={count}
+        setCount={setCount}
+      />
       <Hero />
     </div>
   );

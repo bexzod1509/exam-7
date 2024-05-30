@@ -19,10 +19,12 @@ import color2 from "../../assets/color2.png";
 import color3 from "../../assets/color3.png";
 import color4 from "../../assets/color4.png";
 import { addToCart } from "../../context/cartSlice";
+import { BsCartCheckFill } from "react-icons/bs";
 function Single() {
   let { id } = useParams();
   let { data } = useGetProductsQuery();
   let { data: dataDetail, isLoading } = useGetDeteilProductQuery(id);
+  let Cart = useSelector((state) => state.cart.value);
   let wishList = useSelector((state) => state.heart.value);
   let dispatch = useDispatch();
   return (
@@ -105,7 +107,11 @@ function Single() {
               </div>
               <div className="g11">
                 <button onClick={() => dispatch(addToCart(dataDetail))}>
-                  <MdOutlineShoppingCart />
+                  {Cart?.some((item) => item.id === dataDetail?.id) ? (
+                    <BsCartCheckFill />
+                  ) : (
+                    <MdOutlineShoppingCart />
+                  )}
                   Add To Cart
                 </button>
                 <button onClick={() => dispatch(toggleHeart(dataDetail))}>
