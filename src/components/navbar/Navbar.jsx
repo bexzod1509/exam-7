@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import down from "../../assets/down.png";
 import cart from "../../assets/Cart.png";
@@ -9,6 +9,7 @@ import search from "../../assets/search.png";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 function Navbar() {
+  const [toggle, setToggle] = useState(false);
   let wishlist = useSelector((state) => state.heart.value);
   let Cart = useSelector((state) => state.cart.value);
   let token = localStorage.getItem("token");
@@ -54,13 +55,25 @@ function Navbar() {
             <NavLink to={"/"}>
               <img src={logo} alt="" />
             </NavLink>
-            <div className="a6">
+            <div
+              id="links"
+              className={`navbar-responsive ${toggle ? "open" : ""}`}
+            >
               <NavLink to={"/"}>HOME</NavLink>
               <NavLink to={"/"}>BAGS</NavLink>
               <NavLink to={"/"}>SNEAKERS</NavLink>
               <NavLink to={"/"}>BELT</NavLink>
               <NavLink to={"/contact"}>CONTACT</NavLink>
             </div>
+            <button
+              onClick={() => setToggle(!toggle)}
+              className="menu-btn"
+              id="menu-btn"
+            >
+              <span className="line"></span>
+              <span className="line"></span>
+              <span className="line"></span>
+            </button>
           </nav>
         </div>
       </header>

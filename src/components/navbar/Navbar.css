@@ -78,12 +78,13 @@ header {
   background: #fff;
   z-index: 10;
 }
-.a6 {
+/* responsive */
+#links {
   display: flex;
   align-items: center;
   gap: 97px;
 }
-.a6 a {
+#links a {
   text-decoration: none;
   color: rgb(38, 38, 38);
   font-family: Poppins;
@@ -93,6 +94,65 @@ header {
   letter-spacing: 0%;
   text-align: left;
 }
-.a6 a:hover {
+#links a:hover {
   color: rgb(64, 191, 255);
+}
+.navbar-responsive.open {
+  left: 0;
+}
+.menu-btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  display: none;
+}
+
+.menu-btn span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+}
+@media (max-width: 1000px) {
+  .navbar-responsive {
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    transition: 0.5s;
+  }
+  .menu-btn {
+    display: flex;
+  }
+  .a {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: #fff;
+    padding: 20px;
+    justify-content: center;
+  }
+  .a2 h3 {
+    display: none;
+  }
+  .a3 {
+    display: none;
+  }
+  .a2 {
+    gap: 80px;
+  }
+  .a4 {
+    display: none;
+  }
 }

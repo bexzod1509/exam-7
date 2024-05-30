@@ -197,3 +197,28 @@
   letter-spacing: 0%;
   text-align: left;
 }
+@media (max-width: 1200px) {
+  .f {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 20px;
+  }
+  .f img {
+    width: 90%;
+  }
+  .f h1 {
+    font-size: 36px;
+    line-height: 50px;
+    margin-top: 20px;
+  }
+  .f5 {
+    justify-content: center;
+  }
+  .f8 {
+    justify-content: center;
+  }
+  .f10 input {
+    width: 180px;
+  }
+}

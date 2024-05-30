@@ -105,3 +105,19 @@
   color: rgb(51, 160, 255);
   border-bottom: 2px solid rgb(51, 160, 255);
 }
+@media (max-width: 1000px) {
+  .d h1 {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 150px;
+  }
+  .d1 {
+    display: none;
+  }
+  .d5 {
+    gap: 15px;
+  }
+  .d5 p {
+    font-size: 16px;
+  }
+}

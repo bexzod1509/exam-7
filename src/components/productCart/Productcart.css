@@ -137,3 +137,26 @@
   letter-spacing: 0%;
   text-align: center;
 }
+@media (max-width: 1000px) {
+  .i1 {
+    display: none;
+  }
+  .i2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 663px) {
+  .i10 {
+    gap: 55px;
+    justify-content: center;
+  }
+  .i4 {
+    gap: 20px;
+  }
+  .i3 {
+    gap: 10px;
+  }
+}

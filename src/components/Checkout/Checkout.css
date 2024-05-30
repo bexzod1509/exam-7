@@ -133,3 +133,45 @@
   text-align: center;
   background: rgb(51, 160, 255);
 }
+@media (max-width: 900px) {
+  .j1 {
+    width: 500px;
+  }
+  .j3 {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .j7 h2 {
+    display: none;
+  }
+  .j4 {
+    display: none;
+  }
+  #j6 {
+    padding: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .j1 {
+    width: 320px;
+    padding: 15px;
+  }
+  .j3 input {
+    width: 260px;
+  }
+  .j6 {
+    width: 260px;
+  }
+  #j6 {
+    width: 260px;
+  }
+  .j8 button {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 0px;
+  }
+  .j1 h1 {
+    font-size: 25px;
+  }
+}

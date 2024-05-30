@@ -86,3 +86,28 @@
   flex-wrap: wrap;
   margin-top: 141px;
 }
+@media (max-width: 650px) {
+  .h1 {
+    padding: 53px 60px 120px 56px;
+  }
+  .h2 input {
+    width: 360px;
+  }
+  .h2 textarea {
+    width: 360px;
+  }
+}
+@media (max-width: 475px) {
+  .h1 {
+    padding: 25px;
+  }
+  .h1 h1 {
+    font-size: 28px;
+  }
+  .h2 input {
+    width: 240px;
+  }
+  .h2 textarea {
+    width: 240px;
+  }
+}

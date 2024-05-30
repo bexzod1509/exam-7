@@ -331,7 +331,11 @@
   margin-top: 77px;
   margin-bottom: 83px;
 }
-
+#g20 {
+  width: 375px;
+  height: 271px;
+  object-fit: contain;
+}
 .load1 {
   width: 526px;
   height: 526px;
@@ -377,12 +381,19 @@
   height: 120px;
   margin-top: 20px;
 }
-@media (max-width: 551px) {
-  .g5 {
-    width: 340px;
-    height: 340px;
-  }
-  .g4 {
+@media (max-width: 549px) {
+  .g1 {
     display: none;
+  }
+  .g17 {
+    display: none;
+  }
+  .g9 {
+    gap: 20px;
+  }
+}
+@media (max-width: 395px) {
+  #g20 {
+    width: 90%;
   }
 }

@@ -53,11 +53,7 @@ function Single() {
             </div>
           </div>
           <div>
-            <img
-              style={{ width: "375px", height: "271px", objectFit: "contain" }}
-              src={dataDetail?.image}
-              alt=""
-            />
+            <img id="g20" src={dataDetail?.image} alt="" />
             <div className="g1">
               <img src={dataDetail?.image} alt="" />
               <img src={dataDetail?.image} alt="" />
